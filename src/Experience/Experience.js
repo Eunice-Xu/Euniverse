@@ -61,7 +61,7 @@ export default class Experience
         this.preLoader = new PreLoader()
         this.world = new World()
         this.materials = new Materials()
-        this.animations = new Animations()
+        //this.animations = new Animations()
         this.postProcessing = new PostProcessing()
         this.controller = new Controller()
         this.rayCaster = new RayCaster()
@@ -91,7 +91,7 @@ export default class Experience
         this.camera.update()
         this.world.update()
         this.postProcessing.update()
-        this.animations.update()
+        //this.animations.update()
         this.performance.update()
     }
 
