@@ -190,8 +190,8 @@ export default class PostProcessing
     enableUpdate()
     {
         this.update = function update() {
-            {this.renderBloom()}
-            {this.finalComposer.render()}
+           // {this.renderBloom()}
+           {this.finalComposer.render()}
         }
     }
     
