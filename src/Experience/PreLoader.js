@@ -10,7 +10,7 @@ export default class PreLoader extends EventEmitter
 
         this.experience = new Experience()
         this.scene = this.experience.scene
-        this.sounds = this.experience.sounds
+        //this.sounds = this.experience.sounds
         this.resources = this.experience.resources
         this.sizes = this.experience.sizes
         this.overlay = document.querySelector('.overlay')
@@ -68,9 +68,9 @@ export default class PreLoader extends EventEmitter
             this.controller.camControls.toDefault()
 
             // Play Sounds
-            this.sounds.playClick()
-            this.sounds.playWhoosh()
-            this.sounds.playCooking()
+            //this.sounds.playClick()
+            //this.sounds.playWhoosh()
+            //this.sounds.playCooking()
 
             // Required for instagram brower compatibility
             this.sizes.resize()
@@ -84,7 +84,7 @@ export default class PreLoader extends EventEmitter
 
             // Play Sounds
             await this.sleep(500)
-            this.sounds.playDing()
+            //this.sounds.playDing()
 
         },{ once: true });
     }

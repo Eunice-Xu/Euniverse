@@ -55,7 +55,7 @@ export default class Experience
         this.time = new Time()
         this.camera = new Camera()
         this.renderer = new Renderer()
-        this.sounds = new Sounds()
+        ////this.sounds = new Sounds()
         this.resources = new Resources(sources)
         this.performance = new Performance()
         this.preLoader = new PreLoader()

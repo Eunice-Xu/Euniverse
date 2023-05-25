@@ -11,7 +11,7 @@ export default class Hologram
         this.time = this.experience.time
         this.debug = this.experience.debug
         this.preLoader = this.experience.preLoader
-        this.sounds = this.experience.sounds
+        //this.sounds = this.experience.sounds
 
         // Debug
         if(this.debug.active)
@@ -115,7 +115,7 @@ export default class Hologram
     breakHologram()
     {
         if ( this.data.verticesUp >= this.count && this.animate === true) {
-                this.sounds.playHologram()
+                //this.sounds.playHologram()
                 this.data.direction = - 1;
                 this.data.speed = 15;
                 this.data.verticesUp = 0;

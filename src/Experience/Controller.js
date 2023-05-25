@@ -10,7 +10,7 @@ export default class Controller
         this.experience = new Experience()
         this.camera = this.experience.camera
         this.resources = this.experience.resources
-        this.sounds = this.experience.sounds
+        //this.sounds = this.experience.sounds
         this.preLoader = this.experience.preLoader
         this.config = this.experience.config
         this.animations = this.experience.animations
@@ -56,7 +56,7 @@ export default class Controller
         {
             if(this.logic.buttonsLocked === false && this.logic.mode === 'projects0')
             {
-                this.sounds.playBloop()
+                //this.sounds.playBloop()
                 this.logic.mode = 'projects1'
                 this.bigScreenTransition(
                     this.materials.vendingMachineScreenMaterial,
@@ -69,7 +69,7 @@ export default class Controller
         {
             if(this.logic.buttonsLocked === false && this.logic.mode === 'projects0')
             {
-                this.sounds.playBloop()
+                //this.sounds.playBloop()
                 this.logic.mode = 'projects2'
                 this.bigScreenTransition(
                     this.materials.vendingMachineScreenMaterial,
@@ -82,7 +82,7 @@ export default class Controller
         {
             if(this.logic.buttonsLocked === false && this.logic.mode === 'projects0')
             {
-                this.sounds.playBloop()
+                //this.sounds.playBloop()
                 this.logic.mode = 'projects3'
                 this.bigScreenTransition(
                     this.materials.vendingMachineScreenMaterial,
@@ -95,7 +95,7 @@ export default class Controller
         {
             if(this.logic.buttonsLocked === false && this.logic.mode === 'projects0')
             {
-                this.sounds.playBloop()
+                //this.sounds.playBloop()
                 this.logic.mode = 'projects4'
                 this.bigScreenTransition(
                     this.materials.vendingMachineScreenMaterial,
@@ -108,7 +108,7 @@ export default class Controller
         {
             if(this.logic.buttonsLocked === false && this.logic.mode === 'projects0')
             {
-                this.sounds.playBloop()
+                //this.sounds.playBloop()
                 this.logic.mode = 'projects5'
                 this.bigScreenTransition(
                     this.materials.vendingMachineScreenMaterial,
@@ -121,7 +121,7 @@ export default class Controller
         {
             if(this.logic.buttonsLocked === false && this.logic.mode === 'projects0')
             {
-                this.sounds.playBloop()
+                //this.sounds.playBloop()
                 this.logic.mode = 'projects6'
                 this.bigScreenTransition(
                     this.materials.vendingMachineScreenMaterial,
@@ -134,7 +134,7 @@ export default class Controller
         {
             if(this.logic.buttonsLocked === false && this.logic.mode === 'projects0')
             {
-                this.sounds.playBloop()
+                //this.sounds.playBloop()
                 this.logic.mode = 'projects7'
                 this.bigScreenTransition(
                     this.materials.vendingMachineScreenMaterial,
@@ -147,7 +147,7 @@ export default class Controller
         {
             if(this.logic.buttonsLocked === false && this.logic.mode === 'projects0')
             {
-                this.sounds.playBloop()
+                //this.sounds.playBloop()
                 this.logic.mode = 'projects8'
                 this.bigScreenTransition(
                     this.materials.vendingMachineScreenMaterial,
@@ -162,7 +162,7 @@ export default class Controller
         {
             if(this.logic.buttonsLocked === false && (this.logic.mode === 'projects0'))
             {
-                this.sounds.playBloop()
+                //this.sounds.playBloop()
                 this.logic.lockButtons(1500)
                 this.logic.mode = 'menu'
                 this.camControls.toDefault()
@@ -176,7 +176,7 @@ export default class Controller
 
             if(this.logic.buttonsLocked === false && (this.logic.mode === 'projects1' || this.logic.mode === 'projects2' || this.logic.mode === 'projects3'|| this.logic.mode === 'projects4'|| this.logic.mode === 'projects5'|| this.logic.mode === 'projects6'|| this.logic.mode === 'projects7'|| this.logic.mode === 'projects8'))
             {
-                this.sounds.playBloop()
+                //this.sounds.playBloop()
                 this.logic.mode = 'projects0'
                 this.bigScreenTransition(
                     this.materials.vendingMachineScreenMaterial,
@@ -203,7 +203,7 @@ export default class Controller
         {
             if(this.logic.buttonsLocked === false && this.logic.mode === 'menu')
             {
-                this.sounds.playClick()
+                //this.sounds.playClick()
                 this.logic.mode = 'projects0'
                 this.menuControls.buttonIndicator(obj, color)
                 this.camControls.toProjects()
@@ -220,8 +220,8 @@ export default class Controller
         {
             if(this.logic.buttonsLocked === false && this.logic.mode === 'menu')
             {
-                this.sounds.playClick()
-                this.sounds.playWhoosh()
+                //this.sounds.playClick()
+                //this.sounds.playWhoosh()
                 this.menuControls.buttonIndicator(obj, color)
                 this.camera.transitions.jZhou(1.5)
             }
@@ -230,7 +230,7 @@ export default class Controller
         {
             if(this.logic.buttonsLocked === false && this.logic.mode === 'menu')
             {
-                this.sounds.playClick()
+                //this.sounds.playClick()
                 this.menuControls.buttonIndicator(obj, color)
                 await this.sleep(250)
                 window.open('https://medium.com/@jesse-zhou', '_blank')
@@ -240,7 +240,7 @@ export default class Controller
         {
             if(this.logic.buttonsLocked === false && this.logic.mode === 'menu')
             {
-                this.sounds.playClick()
+                //this.sounds.playClick()
                 this.logic.mode = 'aboutMe'
                 this.menuControls.buttonIndicator(obj, color)
                 this.camControls.toAboutMe()
@@ -270,7 +270,7 @@ export default class Controller
         {
             if(this.logic.buttonsLocked === false && this.logic.mode === 'menu')
             {
-                this.sounds.playClick()
+                //this.sounds.playClick()
                 this.logic.mode = 'creditsStart'
                 this.menuControls.buttonIndicator(obj, color)
                 this.camControls.toCredits()
@@ -302,7 +302,7 @@ export default class Controller
         {
             if(this.logic.buttonsLocked === false && (this.logic.mode === 'skills' || this.logic.mode === 'experience'))
             {
-                this.sounds.playBloop()
+                //this.sounds.playBloop()
                 this.logic.mode = 'aboutMe'
                 
                 if(this.config.vertical === true)
@@ -328,7 +328,7 @@ export default class Controller
         {
             if(this.logic.buttonsLocked === false && (this.logic.mode === 'aboutMe' || this.logic.mode === 'experience'))
             {
-                this.sounds.playBloop()
+                //this.sounds.playBloop()
                 this.logic.mode = 'skills'
 
                 if(this.config.vertical === true)
@@ -354,7 +354,7 @@ export default class Controller
         {
             if(this.logic.buttonsLocked === false && (this.logic.mode === 'aboutMe' || this.logic.mode === 'skills'))
             {
-                this.sounds.playBloop()
+                //this.sounds.playBloop()
                 this.logic.mode = 'experience'
 
                 if(this.config.vertical === true)
@@ -380,7 +380,7 @@ export default class Controller
         {
             if(this.logic.buttonsLocked === false && (this.logic.mode === 'aboutMe' || this.logic.mode === 'skills' || this.logic.mode === 'experience'))
             {
-                this.sounds.playBloop()
+                //this.sounds.playBloop()
                 this.logic.mode = 'menu'
                 this.camControls.toDefault()
 
@@ -404,7 +404,7 @@ export default class Controller
         {
             if(this.logic.buttonsLocked === false && this.logic.mode === 'creditsStart' )
             {
-                this.sounds.playArcade()
+                //this.sounds.playArcade()
                 this.logic.mode = 'credits'
                 this.screenTransition(
                     this.materials.arcadeScreenMaterial,
@@ -414,7 +414,7 @@ export default class Controller
             }
             else if(this.logic.buttonsLocked === false && this.logic.mode === 'credits' )
             {
-                this.sounds.playArcade()
+                //this.sounds.playArcade()
                 this.logic.mode = 'thanks'
                 this.screenTransition(
                     this.materials.arcadeScreenMaterial,
@@ -424,7 +424,7 @@ export default class Controller
             }
             else if(this.logic.buttonsLocked === false && this.logic.mode === 'thanks' )
             {
-                this.sounds.playArcade()
+                //this.sounds.playArcade()
                 this.logic.mode = 'menu'
                 this.camControls.toDefault()
                 this.screenTransition(
@@ -444,7 +444,7 @@ export default class Controller
         this.camControls = {}
         this.camControls.toProjects = async () =>
         {
-            this.sounds.playWhoosh()
+            //this.sounds.playWhoosh()
 
             this.logic.lockButtons(1500)
             this.camera.camAngle.unlocked()
@@ -454,7 +454,7 @@ export default class Controller
         }
         this.camControls.toDefault = async () =>
         {
-            this.sounds.playWhoosh()
+            //this.sounds.playWhoosh()
 
             this.logic.lockButtons(1500)
             this.camera.camAngle.unlocked()
@@ -464,7 +464,7 @@ export default class Controller
         }
         this.camControls.toAboutMe = async () =>
         {
-            this.sounds.playWhoosh()
+            //this.sounds.playWhoosh()
 
             this.logic.lockButtons(1500)
             this.camera.camAngle.unlocked()
@@ -474,7 +474,7 @@ export default class Controller
         }
         this.camControls.toCredits = async () =>
         {
-            this.sounds.playWhoosh()
+            //this.sounds.playWhoosh()
 
             this.logic.lockButtons(1500)
             this.camera.camAngle.unlocked()
@@ -571,7 +571,7 @@ export default class Controller
 
         this.videoControls.togglePlayback = async (video) =>
         {
-            this.sounds.playBloop()
+            //this.sounds.playBloop()
             if(video.paused)
             {video.play()}
             else {video.pause()}
